@@ -3,7 +3,7 @@
     <span class="card-name">{{lvl}}</span>
     <span class="card-title">{{title}}</span>
     <div class="card-body">
-      {{description}}
+      <slot></slot> 
     </div>
   </div>
 </template>
@@ -23,6 +23,10 @@ export default {
       type: String,
       required: true,
     },
+    img: {
+      type: String,
+      required: true
+    }
     
   }
 }
