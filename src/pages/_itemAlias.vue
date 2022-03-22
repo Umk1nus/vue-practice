@@ -1,6 +1,8 @@
 <template>
   <div v-if="item">
     <h1>{{item.title}}</h1>
+    <img :src="item.img" alt="">
+    <router-link to="/" style="margin-left:50px; padding:15px; background: #fff; border-radius: 12px;">Назад</router-link>
   </div>
 </template>
 

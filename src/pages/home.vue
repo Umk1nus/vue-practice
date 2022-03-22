@@ -3,7 +3,7 @@
     <h1>Home</h1>
     <div class="container-card">
       <div class="card_wrapper" v-for="card in cards" :key="card.id">
-        <Card :title="card.title" :description="card.description" :lvl="`${card.lvl}`" :img="card.img">
+        <Card :title="card.title" :description="card.description" :lvl="`${card.lvl}`" :img="card.img" :link="`/${card.alias}`">
           <img class="card-img" :src="card.img" alt="">
         </Card>
       </div>
