@@ -4,7 +4,16 @@
     <div class="container-card">
       <div class="card_wrapper" v-for="card in cards" :key="card.id">
         <Card :title="card.title" :description="card.description" :lvl="`${card.lvl}`" :img="card.img" :link="`/${card.alias}`">
-          <img class="card-img" :src="card.img" alt="">
+          <template v-slot:header>
+              <img class="card-img" :src="card.img" alt="">
+          </template>
+          <template v-slot:footer>
+            <div class="card-stats">
+              <div class="one-third" v-for="(stat, index) in card.stats" :key="index">
+                {{stat.title}} {{stat.value}}
+              </div>
+            </div>
+          </template>
         </Card>
       </div>
     </div>

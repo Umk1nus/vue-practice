@@ -3,9 +3,10 @@
     <span class="card-name">{{lvl}}</span>
     <span class="card-title">{{title}}</span>
     <div class="card-body">
-      <slot></slot>
+      <slot name="header"></slot>
       <router-link v-if="link" :to="link">Посмотреть</router-link> 
     </div>
+    <slot name="footer"></slot>
   </div>
 </template>
 
@@ -30,7 +31,11 @@ export default {
     },
     link: {
       type: String
-    }
+    },
+    stats:{
+      type: Array,
+      required: true
+    } 
     
   }
 }

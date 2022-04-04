@@ -5,7 +5,21 @@ export default [
     alias: 'archer',
     description: 'archer archer archer',
     img: require('@/assets/img/archer.png'),
-    lvl: '4 lvl'
+    lvl: '4 lvl',
+    stats: [
+      {
+        title: 'speed',
+        value: '25ms' 
+      },
+      {
+        title: 'strength',
+        value: '15'
+      },
+      {
+        title: 'agility',
+        value: '10'
+      }
+    ]
   },
   {
     id: 2,
@@ -13,7 +27,21 @@ export default [
     alias: 'barbarian',
     description: 'barbarian barbarian barbarian',
     img: require('@/assets/img/barbarian.png'),
-    lvl: '5 lvl'
+    lvl: '5 lvl',
+    stats: [
+      {
+        title: 'speed',
+        value: '25ms' 
+      },
+      {
+        title: 'strength',
+        value: '15'
+      },
+      {
+        title: 'agility',
+        value: '10'
+      }
+    ]
   },
   {
     id: 3,
@@ -21,7 +49,21 @@ export default [
     alias: 'giant',
     description: 'giant giant giant',
     img: require('@/assets/img/giant.png'),
-    lvl: '1 lvl'
+    lvl: '1 lvl',
+    stats: [
+      {
+        title: 'speed',
+        value: '25ms' 
+      },
+      {
+        title: 'strength',
+        value: '15'
+      },
+      {
+        title: 'agility',
+        value: '10'
+      }
+    ]
   },
   {
     id: 4,
@@ -29,6 +71,20 @@ export default [
     alias: 'wizard',
     description: 'wizard wizard wizard',
     img: require('@/assets/img/wizard.png'),
-    lvl: '4 lvl'
+    lvl: '4 lvl',
+    stats: [
+      {
+        title: 'speed',
+        value: '25ms' 
+      },
+      {
+        title: 'strength',
+        value: '15'
+      },
+      {
+        title: 'agility',
+        value: '10'
+      }
+    ]
   }
 ]
