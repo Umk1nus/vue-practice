@@ -18,6 +18,7 @@
       </slide>
     <template #addons>
       <navigation />
+      <pagination />
     </template>
   </carousel>
 </div>
@@ -28,14 +29,15 @@ import Card from '@/components/UI/Card'
 import cards from '@/seeders/items'
 import 'vue3-carousel/dist/carousel.css'
 
-import { Carousel, Slide, Navigation } from 'vue3-carousel';
+import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel';
 
 export default {
   components: {
     Card,
     Carousel,
     Slide,
-    Navigation
+    Navigation,
+    Pagination
   },
   data() {
     return {
